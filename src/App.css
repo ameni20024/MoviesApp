@@ -1,38 +1,146 @@
-.App {
-  text-align: center;
+
+
+.logo{
+  width:100px;
+  height: 100px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.navbar{
   display: flex;
-  flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  justify-content: space-between;
+  margin: 0 150px;
+  position: relative;
+}
+
+.navItems{
+  display: flex;
+  list-style: none;
+  
+}
+.navItems li {
+  padding: 0 10px;
+  color: white;
+  /*justify-content: space-between;*/
+}
+
+.navItems a {
+  color: white;
+  font-family: Helvetica, Arial, sans-serif;
+  text-decoration: none;
+}
+
+
+.logo-name{
+  display: flex;
+}
+.logo-name h1{
+  display: flex;
+  /*margin-top: 35px;*/
+  height: 42px;
+  color: white;
+
+}
+.bg-area{
+  height: 100%;
+  position: relative;
+  z-index: 1;
+}
+
+.App{
+  background-image: url(https://www.cineretro.org/wp-content/uploads/bg.jpg);
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+.Cards{
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: 170px;
+  margin-right: 170px;
+  align-items: center;
+  justify-content: space-between;
+  
+}
+
+.content{
+  display: flex;
+  justify-content: space-between;
+}
+.content p{
+  display: flex;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+
+.c-im {
+  height: 350px;
+  display: flex;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+
+
+.formdiv{
+  text-align: center;
+}
+
+
+.formdiv form {
+   display: flex; 
+  /* display: inline-block; */
+  flex-direction: column;
+  /* box-align: center; */
+  width: 400px;
+  min-width: 100px;
+  min-height: 400px;
+  padding: 20px 40px 40px 40px;
+  border-radius: 6px;
+  box-shadow: 0px 8px 36px #222;
+  background-color: #4e0a0a; 
+  border:4px solid rgb(145, 0, 0);
+}
+.form > h1 {
+  display: flex;
+  justify-content: center;
+  font-family: "Segoe UI", "Ubuntu", "Roboto", "Open Sans", "Helvetica Neue", sans-serif;
+  font-size: 2em;
+  font-weight: lighter;
+  margin-top: 0.25em;
+  color: rgb(211, 211, 211);
+  letter-spacing: 2px;
+}
+
+.form > label {
+  margin-bottom: 0.5em;
+  color: rgb(145, 145, 145);
+  font-weight: lighter;
+}
+
+/* .form > input {
+  /* display: flex; */
+  /* flex-direction: column; */
+  /* margin-bottom: 15px;
+  width: 100%; */
+/* } */  
+
+.form input {
+  border: 2px solid rgb(0, 0, 0);
+  border-radius: 4px;
+}
+
+.form button {
+  min-width: 100%;
+  cursor: pointer;
+  margin-right: 0.25em;
+  margin-top: 0.5em;
+  padding: 	0.938em;
+  border: 1px solid black;
+  border-radius: 4px;
+  background-color: #800000;
+  color: #fefefe;
+}
+.form button:hover {
+  background-color: #694a4a;
+  color: #fefefe;
 }
